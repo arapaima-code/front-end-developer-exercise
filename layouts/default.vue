@@ -21,4 +21,11 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+// link styling
+a{
+  &.nuxt-link-exact-active {
+    font-weight:bold;
+  }
+}
+</style>
