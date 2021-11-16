@@ -15,10 +15,19 @@
         </p>
       </b-col>
     </b-row>
+    <b-row>
+      <b-col>
+      <PricingCard></PricingCard>
+      </b-col>
+    </b-row>
+
+    <b-row></b-row>
   </b-container>
 </template>
 
 <script>
+
+
 export default {
   name: 'Pricing',
   layout: 'default',

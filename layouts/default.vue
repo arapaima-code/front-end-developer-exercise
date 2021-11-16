@@ -12,12 +12,23 @@
         <Nuxt />
       </b-col>
     </b-row>
+        <b-modal id="modal-1" title="New Plan Selected">
+      <p v-if="planChoice">You have chosen: <span class="font-weight-bold">{{planChoice}}</span></p>
+      <p v-else>No plan selected</p>
+  </b-modal>
   </b-container>
+
 </template>
 
 <script>
 export default {
   name: 'Default',
+   props: {},
+  computed: {
+      planChoice(){ return this.$store.getters.chosenPlan
+      }
+  },
+  methods: {},
 };
 </script>
 

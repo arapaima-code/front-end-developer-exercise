@@ -38,12 +38,30 @@ export const state = {
     },
   ],
   chosenPlan: null,
+  count: 10
 };
 
 export const getters = {
-  pricingOptions(state) {
+ /* pricingOptions(state) {
+    return state.pricingOptions;
+  }, */
+  pricingOptions: price => {
     return state.pricingOptions;
   },
+  chosenPlan(state) {
+    return state.chosenPlan;
+  }, 
+  count(state){
+    return state.count
+  }
 };
 
-export const mutations = {};
+export const mutations = {
+  increase(state) {
+    state.count++;
+  },
+
+  planChange (state, plan) {
+    state.count = plan
+  }
+};
