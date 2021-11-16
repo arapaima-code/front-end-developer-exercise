@@ -7,7 +7,7 @@
     </b-row>
     <b-row class="justify-content-center">
       <b-col md="8">
-        <p>
+        <p class="fs-3 text-muted">
           Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo,
           tenetur. Eius, fugit quidem tempore, quia officia impedit possimus
           officiis doloremque autem illum reiciendis libero dignissimos
@@ -15,18 +15,10 @@
         </p>
       </b-col>
     </b-row>
-    <b-row>
-      <b-col>
       <PricingCard></PricingCard>
-      </b-col>
-    </b-row>
-
-    <b-row></b-row>
   </b-container>
 </template>
-
 <script>
-
 
 export default {
   name: 'Pricing',
@@ -36,8 +28,7 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-p {
-  color: #6c757d;
+.fs-3{
   font-size: 1.25rem;
 }
 </style>
